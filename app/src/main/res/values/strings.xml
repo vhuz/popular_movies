@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Popular Movies</string>
+    <string name="action_reset">Reset</string>
+    <string name="example_txt">Exemple Text</string>
 </resources>
