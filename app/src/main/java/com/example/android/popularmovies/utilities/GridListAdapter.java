@@ -28,18 +28,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.android.popularmovies.R;
 
-/**
- * We couldn't come up with a good name for this class. Then, we realized
- * that this lesson is about RecyclerView.
- * <p>
- * RecyclerView... Recycling... Saving the planet? Being green? Anyone?
- * #crickets
- * <p>
- * Avoid unnecessary garbage collection by using RecyclerView and ViewHolders.
- * <p>
- * If you don't like our puns, we named this Adapter GreenAdapter because its
- * contents are green.
- */
+
 public class GridListAdapter extends RecyclerView.Adapter<GridListAdapter.NumberViewHolder> {
 
     private static final String TAG = GridListAdapter.class.getSimpleName();

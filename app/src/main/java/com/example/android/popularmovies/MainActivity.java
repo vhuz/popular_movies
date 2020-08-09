@@ -24,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -31,7 +32,7 @@ import com.example.android.popularmovies.utilities.GridListAdapter;
 
 public class MainActivity extends AppCompatActivity implements GridListAdapter.ListItemClickListener {
 
-    private static final int NUM_LIST_ITEMS = 100;
+    private static final int NUM_LIST_ITEMS = 50;
 
     /*
      * References to RecyclerView and Adapter to reset the list to its
@@ -71,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements GridListAdapter.L
          * There are other LayoutManagers available to display your data in uniform grids,
          * staggered grids, and more! See the developer documentation for more details.
          */
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 2, RecyclerView.VERTICAL, false);
         mNumbersList.setLayoutManager(layoutManager);
 
         /*
